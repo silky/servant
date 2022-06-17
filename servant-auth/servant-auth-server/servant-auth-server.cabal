@@ -72,6 +72,7 @@ library
       Servant.Auth.Server.Internal.Cookie
       Servant.Auth.Server.Internal.FormLogin
       Servant.Auth.Server.Internal.JWT
+      Servant.Auth.Server.Internal.OAuth2
       Servant.Auth.Server.Internal.ThrowAll
       Servant.Auth.Server.Internal.Types
       Servant.Auth.Server.SetCookieOrphan

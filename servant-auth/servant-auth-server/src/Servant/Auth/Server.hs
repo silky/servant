@@ -150,6 +150,7 @@ import Servant.Auth.Server.Internal.Class
 import Servant.Auth.Server.Internal.ConfigTypes
 import Servant.Auth.Server.Internal.Cookie
 import Servant.Auth.Server.Internal.JWT
+import Servant.Auth.Server.Internal.OAuth2
 import Servant.Auth.Server.Internal.ThrowAll
 import Servant.Auth.Server.Internal.Types
 
