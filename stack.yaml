@@ -1,17 +1,17 @@
 resolver: lts-18.5
 packages:
+- servant-auth/servant-auth/
 - servant-client-core/
 - servant-client/
+- servant-conduit
 - servant-docs/
 - servant-foreign/
 - servant-http-streams/
-- servant-server/
-- servant/
-
-- servant-conduit
 - servant-machines/
 - servant-pipes/
+- servant-server/
 - servant-swagger/
+- servant/
 
 # allow-newer: true # ignores all bounds, that's a sledgehammer
 # - doc/tutorial/
