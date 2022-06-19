@@ -51,3 +51,8 @@ packages:
 tests: True
 optimization: False
 -- reorder-goals: True
+
+source-repository-package
+  type: git
+  location: https://github.com/silky/wai-middleware-auth
+  tag: 460bd832a52b0bbe14f4a350d3fe3881b260d882

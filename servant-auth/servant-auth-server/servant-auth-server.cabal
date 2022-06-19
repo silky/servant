@@ -54,6 +54,7 @@ library
     , time                    >= 1.5.0.1  && < 1.12
     , unordered-containers    >= 0.2.9.0  && < 0.3
     , wai                     >= 3.2.1.2  && < 3.3
+    , wai-middleware-auth     >= 0.2.6    && < 0.3
 
   if impl(ghc >= 9)
     build-depends:

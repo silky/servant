@@ -21,17 +21,23 @@ import           Servant                  (AddHeader, addHeader)
 import           System.Entropy           (getEntropy)
 import           Web.Cookie
 
+import qualified Network.Wai.Middleware.Auth          as Wai
+import qualified Network.Wai.Middleware.Auth.Provider as Wai
+
 import Servant.Auth.Server.Internal.ConfigTypes
 import Servant.Auth.Server.Internal.Types
-
 
 data OAuth2Settings = OAuth2Settings
   { clientId :: Int
   , clientSecret :: Int
   }
 
-
-oauth2AuthCheck :: OAuth2Settings -> AuthCheck usr
-oauth2AuthCheck settings = do
-  req <- ask
+oauth2AuthCheck :: OAuth2Settings -> Wai.Provider -> AuthCheck usr
+oauth2AuthCheck settings provider = do
+  request <- ask
+  let suffix = ["login", "complete"]
+      a = undefined
+      success authLoginState = undefined -- pure authLoginState
+      failure = undefined
+  liftIO $ Wai.handleLogin provider request suffix a success failure
   undefined
